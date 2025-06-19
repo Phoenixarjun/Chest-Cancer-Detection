@@ -203,8 +203,6 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ## 🙌 Credits
 
 Created by **Naresh B A**
-
-* 🎓 B.Tech IT, Sri Sairam Institute of Technology
 * 💡 Full Stack Developer | AI/ML Enthusiast
 * 🔗 [LinkedIn](www.linkedin.com/in/naresh-b-a-1b5331243)
 
