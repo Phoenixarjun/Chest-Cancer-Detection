@@ -6,6 +6,7 @@ mlflow==2.2.2
 notebook
 numpy
 matplotlib
+dagshub
 seaborn
 python-box==6.0.2
 pyYAML

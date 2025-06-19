@@ -1,7 +1,6 @@
 from chest_cancer_detection.config.configuration import ConfigurationManager
 from chest_cancer_detection.components.model_trainer import Training
 from chest_cancer_detection import logger
-import zipfile
 
 STAGE_NAME = "Model Trainer Stage"
 
