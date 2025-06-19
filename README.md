@@ -210,5 +210,3 @@ Created by **Naresh B A**
 
 Drop a ⭐ if you found this project helpful!
 
-```
-
