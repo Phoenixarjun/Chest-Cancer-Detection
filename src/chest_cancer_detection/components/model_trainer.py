@@ -7,26 +7,25 @@ from pathlib import Path
 from src.chest_cancer_detection.entity.config_entity import TrainingConfig
 
 class Training:
-    def __init__(self, config: TrainingConfig):
+    def __init__(self, config):
         self.config = config
 
-    
     def get_base_model(self):
         self.model = tf.keras.models.load_model(
             self.config.updated_base_model_path
         )
 
     def train_valid_generator(self):
-
         datagenerator_kwargs = dict(
-            rescale = 1./255,
+            rescale=1./255,
             validation_split=0.20
         )
 
         dataflow_kwargs = dict(
             target_size=self.config.params_image_size[:-1],
             batch_size=self.config.params_batch_size,
-            interpolation="bilinear"
+            interpolation="bilinear",
+            class_mode="categorical"  # Critical for softmax output
         )
 
         valid_datagenerator = tf.keras.preprocessing.image.ImageDataGenerator(
@@ -60,14 +59,10 @@ class Training:
             **dataflow_kwargs
         )
 
-    
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
 
-
-
-    
     def train(self):
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
@@ -84,4 +79,3 @@ class Training:
             path=self.config.trained_model_path,
             model=self.model
         )
-

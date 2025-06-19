@@ -1,0 +1,27 @@
+{
+    "Adenocarcinoma": {
+        "precision": 0.97,
+        "recall": 1.0,
+        "f1-score": 0.9847715736040609,
+        "support": 97.0
+    },
+    "Normal": {
+        "precision": 1.0,
+        "recall": 0.9361702127659575,
+        "f1-score": 0.967032967032967,
+        "support": 47.0
+    },
+    "accuracy": 0.9791666666666666,
+    "macro avg": {
+        "precision": 0.985,
+        "recall": 0.9680851063829787,
+        "f1-score": 0.975902270318514,
+        "support": 144.0
+    },
+    "weighted avg": {
+        "precision": 0.9797916666666667,
+        "recall": 0.9791666666666666,
+        "f1-score": 0.9789818895148845,
+        "support": 144.0
+    }
+}
