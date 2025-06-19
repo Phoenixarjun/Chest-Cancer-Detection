@@ -31,14 +31,14 @@ It’s more than a model — it’s a reproducible, scalable machine learning sy
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Chest-Cancer-Detection.git
-cd Chest-Cancer-Detection
+git clone https://github.com/Phoenixarjun/ChestScan-AI
+cd ChestScan-AI
 ````
 
 Install the dependencies:
 
 ```bash
-pip install tensorflow==2.12.0 pandas gdown dvc mlflow==2.2.2 notebook flask scikit-learn matplotlib opencv-python
+pip install -r requirements.txt
 ```
 
 ---
