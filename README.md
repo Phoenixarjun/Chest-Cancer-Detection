@@ -1,4 +1,4 @@
-# 🩺 Chest-Cancer-Detection
+# 🩺 ChestScan AI - Chest Cancer Prediction
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.12.0-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
@@ -14,7 +14,7 @@
 
 ## 📌 Project Overview
 
-**Chest-Cancer-Detection** is a complete end-to-end MLOps project that automates the detection of **Adenocarcinoma Cancer** from chest CT scan images using a deep learning model based on VGG16.
+**ChestScan AI** is a complete end-to-end MLOps project that automates the detection of **Adenocarcinoma Cancer** from chest CT scan images using a deep learning model based on VGG16.
 
 This project integrates:
 - ✅ **TensorFlow** for model development  
